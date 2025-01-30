@@ -1,0 +1,51 @@
+Comandos usados para la primera practica
+-ningunos 
+
+
+Comandos usados para segunda practica
+
+nmcli connection show
+nmcli connection modify <NOMBRE_DE_LA_CONEXIÓN> ipv4.method auto
+nmcli connection modify <NOMBRE_DE_LA_CONEXIÓN> ipv6.method auto
+nmcli connection down <NOMBRE_DE_LA_CONEXIÓN>
+nmcli connection up <NOMBRE_DE_LA_CONEXIÓN>
+ip addr show
+nmcli connection show <NOMBRE_DE_LA_CONEXIÓN>
+nmcli connection modify <NOMBRE_DE_LA_CONEXIÓN> connection.autoconnect yes
+nmcli connection show
+nmcli connection delete <NOMBRE_DE_LA_CONEXIÓN>
+nmcli connection delete <NOMBRE_DE_LA_CONEXIÓN>
+nmtui
+
+
+Comandos usados para la tercera practica
+
+sudo useradd nombre_usuario
+sudo passwd nombre_usuario
+sudo usermod -aG sudo nombre_usuario
+groups nombre_usuario
+nombre_usuario : nombre_usuario sudo
+sudo groupadd guest
+sudo useradd "nombre usuario guest"
+sudo usermod -aG guest "nombre usuario guest"
+groups "nombre usuario guest"
+nombre_usuario_guest : nombre_usuario_guest guest
+sudo userdel nombre_usuario_guest
+sudo userdel -r nombre_usuario_guest
+sudo groupdel guest
+
+Comandos usados para la cuarta practica
+
+mkdir materia
+touch materia/estudiante.txt
+vi materia/estudiante.txt
+Nombre: Raelina
+Matrícula: 20212371
+wq
+chmod 700 materia/estudiante.txt
+chmod 770 materia/estudiante.txt
+mkdir materia2
+cp materia/estudiante.txt materia2/
+rm -r materia
+
+
