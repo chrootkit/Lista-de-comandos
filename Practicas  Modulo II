@@ -1,3 +1,28 @@
+Primera Practica
+sudo dnf update -y
+sudo dnf upgrade -y
+
+sudo dnf repolist
+sudo dnf repolist all
+
+sudo dnf list bashtop
+
+sudo dnf install -y bashtop
+sudo dnf install -y epel-release
+sudo dnf install -y bashtop
+
+bashtop
+
+sudo dnf remove -y bashtop
+rm -rf ~/.config/bashtop
+rm -rf ~/.local/share/bashtop
+
+sudo dnf autoremove -y
+sudo dnf clean all
+
+
+Segunda Practica 
+
 sudo crontab -e
 0 23 * * * apt update && apt upgrade -y
 
