@@ -1,0 +1,11 @@
+sudo crontab -e
+0 23 * * * apt update && apt upgrade -y
+
+sudo crontab -e
+0 3 * * 0 reboot
+
+sudo systemctl start atd
+sudo systemctl enable atd
+
+echo "rm -rf /tmp/*" | at now + 1 minute
+atq
